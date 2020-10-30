@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230D563925481AAA00B937E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D563825481AAA00B937E2 /* Constants.swift */; };
+		230D563C25481AD000B937E2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D563B25481AD000B937E2 /* Utilities.swift */; };
+		2328A044254B903B0084E0C0 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2328A043254B903B0084E0C0 /* CardCollectionViewCell.swift */; };
+		23438371254A047F00777218 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23438370254A047F00777218 /* SignInViewController.swift */; };
+		23438375254A156B00777218 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23438374254A156A00777218 /* Home.storyboard */; };
+		237C481E2548458C00E7E41F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237C481D2548458C00E7E41F /* HomeViewController.swift */; };
+		237C48212548468A00E7E41F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237C48202548468A00E7E41F /* AuthService.swift */; };
 		2395A68D2547F0BD0031A6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A68C2547F0BD0031A6EF /* AppDelegate.swift */; };
 		2395A68F2547F0BD0031A6EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A68E2547F0BD0031A6EF /* SceneDelegate.swift */; };
 		2395A6912547F0BD0031A6EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A6902547F0BD0031A6EF /* ViewController.swift */; };
@@ -14,9 +21,39 @@
 		2395A6972547F0BD0031A6EF /* Reimagine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2395A6952547F0BD0031A6EF /* Reimagine.xcdatamodeld */; };
 		2395A6992547F0BF0031A6EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2395A6982547F0BF0031A6EF /* Assets.xcassets */; };
 		2395A69C2547F0BF0031A6EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2395A69A2547F0BF0031A6EF /* LaunchScreen.storyboard */; };
+		2395A6A625480AF10031A6EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A6A525480AF10031A6EF /* SignUpViewController.swift */; };
+		23E2572C254A58A000C52BA1 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2572B254A58A000C52BA1 /* MainTabViewController.swift */; };
+		23E2572F254A5B3F00C52BA1 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2572E254A5B3F00C52BA1 /* LogOutViewController.swift */; };
+		23E25732254A5D2C00C52BA1 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E25731254A5D2B00C52BA1 /* AddItemViewController.swift */; };
+		23E7E82D254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7E82C254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift */; };
+		23F4839A254A97740059CB31 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4838D254A97740059CB31 /* AmplifyModels.swift */; };
+		23F4839B254A97740059CB31 /* UserIdToPostId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4838E254A97740059CB31 /* UserIdToPostId.swift */; };
+		23F4839C254A97740059CB31 /* UserLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4838F254A97740059CB31 /* UserLister.swift */; };
+		23F4839D254A97740059CB31 /* BucketLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48390254A97740059CB31 /* BucketLister+Schema.swift */; };
+		23F4839E254A97740059CB31 /* PostLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48391254A97740059CB31 /* PostLister+Schema.swift */; };
+		23F4839F254A97740059CB31 /* UserIdToBucketId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48392254A97740059CB31 /* UserIdToBucketId.swift */; };
+		23F483A0254A97740059CB31 /* UserIdToPostId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48393254A97740059CB31 /* UserIdToPostId+Schema.swift */; };
+		23F483A1254A97740059CB31 /* UserLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48394254A97740059CB31 /* UserLister+Schema.swift */; };
+		23F483A2254A97740059CB31 /* PostLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48395254A97740059CB31 /* PostLister.swift */; };
+		23F483A3254A97740059CB31 /* UserIdToFriendId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48396254A97740059CB31 /* UserIdToFriendId+Schema.swift */; };
+		23F483A4254A97740059CB31 /* UserIdToBucketId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48397254A97740059CB31 /* UserIdToBucketId+Schema.swift */; };
+		23F483A5254A97740059CB31 /* BucketLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48398254A97740059CB31 /* BucketLister.swift */; };
+		23F483A6254A97740059CB31 /* UserIdToFriendId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48399254A97740059CB31 /* UserIdToFriendId.swift */; };
+		3DAD6ED6A34046A480AB34A6 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0845B2B3D9FB42B0812CE43A /* amplifyconfiguration.json */; };
+		79ECAF21D9EA4BC9BED52F35 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B7DC1794DB0845E29D1130A7 /* awsconfiguration.json */; };
+		B57B176C2E52C62B26B01772 /* Pods_Reimagine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE5D8B2DD77069846D8238 /* Pods_Reimagine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0845B2B3D9FB42B0812CE43A /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		087D6275AA2C64ECB1218332 /* Pods-Reimagine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reimagine.release.xcconfig"; path = "Target Support Files/Pods-Reimagine/Pods-Reimagine.release.xcconfig"; sourceTree = "<group>"; };
+		230D563825481AAA00B937E2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		230D563B25481AD000B937E2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2328A043254B903B0084E0C0 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		23438370254A047F00777218 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		23438374254A156A00777218 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		237C481D2548458C00E7E41F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		237C48202548468A00E7E41F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2395A6892547F0BD0031A6EF /* Reimagine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reimagine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2395A68C2547F0BD0031A6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2395A68E2547F0BD0031A6EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +63,29 @@
 		2395A6982547F0BF0031A6EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2395A69B2547F0BF0031A6EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2395A69D2547F0BF0031A6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2395A6A525480AF10031A6EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		23E2572B254A58A000C52BA1 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		23E2572E254A5B3F00C52BA1 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		23E25731254A5D2B00C52BA1 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		23E7E82C254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DsiplayBucketListsViewController.swift; sourceTree = "<group>"; };
+		23F4838D254A97740059CB31 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		23F4838E254A97740059CB31 /* UserIdToPostId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdToPostId.swift; sourceTree = "<group>"; };
+		23F4838F254A97740059CB31 /* UserLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLister.swift; sourceTree = "<group>"; };
+		23F48390254A97740059CB31 /* BucketLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BucketLister+Schema.swift"; sourceTree = "<group>"; };
+		23F48391254A97740059CB31 /* PostLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostLister+Schema.swift"; sourceTree = "<group>"; };
+		23F48392254A97740059CB31 /* UserIdToBucketId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdToBucketId.swift; sourceTree = "<group>"; };
+		23F48393254A97740059CB31 /* UserIdToPostId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserIdToPostId+Schema.swift"; sourceTree = "<group>"; };
+		23F48394254A97740059CB31 /* UserLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserLister+Schema.swift"; sourceTree = "<group>"; };
+		23F48395254A97740059CB31 /* PostLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostLister.swift; sourceTree = "<group>"; };
+		23F48396254A97740059CB31 /* UserIdToFriendId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserIdToFriendId+Schema.swift"; sourceTree = "<group>"; };
+		23F48397254A97740059CB31 /* UserIdToBucketId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserIdToBucketId+Schema.swift"; sourceTree = "<group>"; };
+		23F48398254A97740059CB31 /* BucketLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketLister.swift; sourceTree = "<group>"; };
+		23F48399254A97740059CB31 /* UserIdToFriendId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdToFriendId.swift; sourceTree = "<group>"; };
+		3B7724D16D7749CDA49BCA7F /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
+		8B1CD6A090D289C178CA0650 /* Pods-Reimagine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reimagine.debug.xcconfig"; path = "Target Support Files/Pods-Reimagine/Pods-Reimagine.debug.xcconfig"; sourceTree = "<group>"; };
+		B7DC1794DB0845E29D1130A7 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+		BEED1B20241D4097B0273B46 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		F6EE5D8B2DD77069846D8238 /* Pods_Reimagine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reimagine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +93,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57B176C2E52C62B26B01772 /* Pods_Reimagine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1390D5F272AEED6AC5AFEEF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6EE5D8B2DD77069846D8238 /* Pods_Reimagine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		230D563625481A4700B937E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				230D563825481AAA00B937E2 /* Constants.swift */,
+				230D563B25481AD000B937E2 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2343836E254A040A00777218 /* AfterSignIn View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				237C481D2548458C00E7E41F /* HomeViewController.swift */,
+				23E2572B254A58A000C52BA1 /* MainTabViewController.swift */,
+				23E2572E254A5B3F00C52BA1 /* LogOutViewController.swift */,
+				23E25731254A5D2B00C52BA1 /* AddItemViewController.swift */,
+				23E7E82C254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift */,
+				2328A043254B903B0084E0C0 /* CardCollectionViewCell.swift */,
+			);
+			path = "AfterSignIn View Controllers";
+			sourceTree = "<group>";
+		};
+		2343836F254A042000777218 /* SignUp-SignIn View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2395A6A525480AF10031A6EF /* SignUpViewController.swift */,
+				23438370254A047F00777218 /* SignInViewController.swift */,
+			);
+			path = "SignUp-SignIn View Controllers";
+			sourceTree = "<group>";
+		};
+		23438379254A18E500777218 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2395A6922547F0BD0031A6EF /* Main.storyboard */,
+				23438374254A156A00777218 /* Home.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		2395A6802547F0BD0031A6EF = {
 			isa = PBXGroup;
 			children = (
+				37BD3CC74FAF4C34825F2C4E /* AmplifyConfig */,
 				2395A68B2547F0BD0031A6EF /* Reimagine */,
 				2395A68A2547F0BD0031A6EF /* Products */,
+				4E21E44F4C8CED76A33ECC5E /* Pods */,
+				1390D5F272AEED6AC5AFEEF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +172,69 @@
 			children = (
 				2395A68C2547F0BD0031A6EF /* AppDelegate.swift */,
 				2395A68E2547F0BD0031A6EF /* SceneDelegate.swift */,
-				2395A6902547F0BD0031A6EF /* ViewController.swift */,
-				2395A6922547F0BD0031A6EF /* Main.storyboard */,
+				23F4838C254A97740059CB31 /* models */,
+				230D563625481A4700B937E2 /* Helpers */,
+				2395A6A425480AC30031A6EF /* ViewControllers */,
+				23438379254A18E500777218 /* StoryBoard */,
 				2395A6982547F0BF0031A6EF /* Assets.xcassets */,
 				2395A69A2547F0BF0031A6EF /* LaunchScreen.storyboard */,
 				2395A69D2547F0BF0031A6EF /* Info.plist */,
 				2395A6952547F0BD0031A6EF /* Reimagine.xcdatamodeld */,
+				237C48202548468A00E7E41F /* AuthService.swift */,
 			);
 			path = Reimagine;
+			sourceTree = "<group>";
+		};
+		2395A6A425480AC30031A6EF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2343836F254A042000777218 /* SignUp-SignIn View Controllers */,
+				2343836E254A040A00777218 /* AfterSignIn View Controllers */,
+				2395A6902547F0BD0031A6EF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		23F4838C254A97740059CB31 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				23F4838D254A97740059CB31 /* AmplifyModels.swift */,
+				23F4838E254A97740059CB31 /* UserIdToPostId.swift */,
+				23F4838F254A97740059CB31 /* UserLister.swift */,
+				23F48390254A97740059CB31 /* BucketLister+Schema.swift */,
+				23F48391254A97740059CB31 /* PostLister+Schema.swift */,
+				23F48392254A97740059CB31 /* UserIdToBucketId.swift */,
+				23F48393254A97740059CB31 /* UserIdToPostId+Schema.swift */,
+				23F48394254A97740059CB31 /* UserLister+Schema.swift */,
+				23F48395254A97740059CB31 /* PostLister.swift */,
+				23F48396254A97740059CB31 /* UserIdToFriendId+Schema.swift */,
+				23F48397254A97740059CB31 /* UserIdToBucketId+Schema.swift */,
+				23F48398254A97740059CB31 /* BucketLister.swift */,
+				23F48399254A97740059CB31 /* UserIdToFriendId.swift */,
+			);
+			name = models;
+			path = amplify/generated/models;
+			sourceTree = SOURCE_ROOT;
+		};
+		37BD3CC74FAF4C34825F2C4E /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BEED1B20241D4097B0273B46 /* amplifytools.xcconfig */,
+				0845B2B3D9FB42B0812CE43A /* amplifyconfiguration.json */,
+				B7DC1794DB0845E29D1130A7 /* awsconfiguration.json */,
+				3B7724D16D7749CDA49BCA7F /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		4E21E44F4C8CED76A33ECC5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B1CD6A090D289C178CA0650 /* Pods-Reimagine.debug.xcconfig */,
+				087D6275AA2C64ECB1218332 /* Pods-Reimagine.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2395A6A02547F0BF0031A6EF /* Build configuration list for PBXNativeTarget "Reimagine" */;
 			buildPhases = (
+				9810B61CFF6C712BA42865CA /* [CP] Check Pods Manifest.lock */,
 				2395A6852547F0BD0031A6EF /* Sources */,
 				2395A6862547F0BD0031A6EF /* Frameworks */,
 				2395A6872547F0BD0031A6EF /* Resources */,
+				D13390F8E44DCA3291C92272 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,20 +299,89 @@
 				2395A69C2547F0BF0031A6EF /* LaunchScreen.storyboard in Resources */,
 				2395A6992547F0BF0031A6EF /* Assets.xcassets in Resources */,
 				2395A6942547F0BD0031A6EF /* Main.storyboard in Resources */,
+				3DAD6ED6A34046A480AB34A6 /* amplifyconfiguration.json in Resources */,
+				79ECAF21D9EA4BC9BED52F35 /* awsconfiguration.json in Resources */,
+				23438375254A156B00777218 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9810B61CFF6C712BA42865CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reimagine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D13390F8E44DCA3291C92272 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reimagine/Pods-Reimagine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reimagine/Pods-Reimagine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reimagine/Pods-Reimagine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2395A6852547F0BD0031A6EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F483A0254A97740059CB31 /* UserIdToPostId+Schema.swift in Sources */,
+				23F4839F254A97740059CB31 /* UserIdToBucketId.swift in Sources */,
 				2395A6912547F0BD0031A6EF /* ViewController.swift in Sources */,
 				2395A68D2547F0BD0031A6EF /* AppDelegate.swift in Sources */,
+				2328A044254B903B0084E0C0 /* CardCollectionViewCell.swift in Sources */,
+				230D563C25481AD000B937E2 /* Utilities.swift in Sources */,
+				23F483A3254A97740059CB31 /* UserIdToFriendId+Schema.swift in Sources */,
+				23F483A4254A97740059CB31 /* UserIdToBucketId+Schema.swift in Sources */,
+				237C48212548468A00E7E41F /* AuthService.swift in Sources */,
+				23F483A2254A97740059CB31 /* PostLister.swift in Sources */,
+				237C481E2548458C00E7E41F /* HomeViewController.swift in Sources */,
+				23F4839B254A97740059CB31 /* UserIdToPostId.swift in Sources */,
+				23F483A1254A97740059CB31 /* UserLister+Schema.swift in Sources */,
+				23E25732254A5D2C00C52BA1 /* AddItemViewController.swift in Sources */,
+				23F4839D254A97740059CB31 /* BucketLister+Schema.swift in Sources */,
+				23F4839A254A97740059CB31 /* AmplifyModels.swift in Sources */,
 				2395A68F2547F0BD0031A6EF /* SceneDelegate.swift in Sources */,
+				23E7E82D254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift in Sources */,
+				23E2572F254A5B3F00C52BA1 /* LogOutViewController.swift in Sources */,
+				23E2572C254A58A000C52BA1 /* MainTabViewController.swift in Sources */,
+				23F483A5254A97740059CB31 /* BucketLister.swift in Sources */,
 				2395A6972547F0BD0031A6EF /* Reimagine.xcdatamodeld in Sources */,
+				2395A6A625480AF10031A6EF /* SignUpViewController.swift in Sources */,
+				23F483A6254A97740059CB31 /* UserIdToFriendId.swift in Sources */,
+				23F4839C254A97740059CB31 /* UserLister.swift in Sources */,
+				23F4839E254A97740059CB31 /* PostLister+Schema.swift in Sources */,
+				23438371254A047F00777218 /* SignInViewController.swift in Sources */,
+				230D563925481AAA00B937E2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +525,7 @@
 		};
 		2395A6A12547F0BF0031A6EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1CD6A090D289C178CA0650 /* Pods-Reimagine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +544,7 @@
 		};
 		2395A6A22547F0BF0031A6EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087D6275AA2C64ECB1218332 /* Pods-Reimagine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
