@@ -77,12 +77,23 @@ class DsiplayBucketListsViewController: UIViewController, UICollectionViewDataSo
         return self.titleList.count
     }
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+            // 1
+            return 1
+        }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         print(self.titleList)
-        let text = self.titleList[indexPath.row]
-//        cell.displayButton.setTitle(text, for: .normal)
-//        Utilities.styleFilledButton(cell.displayButton)
+        
+        cell.frame = CGRect(x:50, y:70*indexPath.row, width:361, height:70)
+        print(CGRect(x:50, y:70*indexPath.row, width:361, height:50))
+        if let label = cell.viewWithTag(100) as? UIButton {
+            label.setTitle(self.titleList[indexPath.row], for: .normal)
+            label.frame = CGRect(x:0, y:0, width:311, height:50)
+            Utilities.styleFilledButton(label)
+        }
+    
         return cell
     }
 

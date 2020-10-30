@@ -14,6 +14,8 @@ class AddItemViewController: UIViewController {
     @IBOutlet weak var labelField: UILabel!
     @IBOutlet weak var activityNameTextField: UITextField!
     
+    @IBOutlet weak var descriptionTextField: UITextField!
+    
     @IBOutlet weak var activityTypeTextField: UITextField!
     
     @IBOutlet weak var activityDescriptionTextField: UITextView!
@@ -30,7 +32,8 @@ class AddItemViewController: UIViewController {
         // Style Elements
         Utilities.styleTextField(activityNameTextField)
         Utilities.styleTextField(activityTypeTextField)
-        
+        Utilities.styleTextField(descriptionTextField)
+        Utilities.styleFilledButton(addItemButton)
     }
     
     @IBAction func addItemButtonClick(_ sender: Any) {
@@ -40,10 +43,10 @@ class AddItemViewController: UIViewController {
         let userId = currentUser!.userId
         let activityNameText = Utilities.fieldData(activityNameTextField)
         let activityTypeText = Utilities.fieldData(activityTypeTextField)
-        let activityDescriptionText = activityDescriptionTextField.text
-        let bucketListItem = BucketLister(title:activityNameText, type:activityTypeText, description: activityDescriptionText!,userId:userId )
+        let activityDescriptionText = Utilities.fieldData(descriptionTextField)
+        let bucketListItem = BucketLister(title:activityNameText, type:activityTypeText, description: activityDescriptionText,userId:userId )
         self.addItemInBucket(bucketListItem, userId)
-        let newPost = PostLister(postId:"0",content:activityDescriptionText!, likes:0, userId:userId)
+        let newPost = PostLister(postId:"0",content:activityDescriptionText, likes:0, userId:userId)
         self.addPost(newPost, userId)
         
         labelField.alpha = 1
