@@ -7,38 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230889EC254CD40400B81464 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230889EB254CD40400B81464 /* ProfileViewController.swift */; };
 		230D563925481AAA00B937E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D563825481AAA00B937E2 /* Constants.swift */; };
 		230D563C25481AD000B937E2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D563B25481AD000B937E2 /* Utilities.swift */; };
+		230EC04D254D1E3F00473F35 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EC04C254D1E3F00473F35 /* Profile.swift */; };
 		2328A044254B903B0084E0C0 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2328A043254B903B0084E0C0 /* CardCollectionViewCell.swift */; };
+		2342E20A254D551600E4E3EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2342E209254D551600E4E3EB /* AppDelegate.swift */; };
+		2342E21B254D57EB00E4E3EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2342E21A254D57EB00E4E3EB /* SceneDelegate.swift */; };
+		2342E23F254D701600E4E3EB /* SettingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2342E23E254D701600E4E3EB /* SettingUp.storyboard */; };
+		2342E242254D706500E4E3EB /* SettingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2342E241254D706500E4E3EB /* SettingUpViewController.swift */; };
 		23438371254A047F00777218 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23438370254A047F00777218 /* SignInViewController.swift */; };
 		23438375254A156B00777218 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23438374254A156A00777218 /* Home.storyboard */; };
 		237C481E2548458C00E7E41F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237C481D2548458C00E7E41F /* HomeViewController.swift */; };
 		237C48212548468A00E7E41F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237C48202548468A00E7E41F /* AuthService.swift */; };
-		2395A68D2547F0BD0031A6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A68C2547F0BD0031A6EF /* AppDelegate.swift */; };
-		2395A68F2547F0BD0031A6EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A68E2547F0BD0031A6EF /* SceneDelegate.swift */; };
 		2395A6912547F0BD0031A6EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A6902547F0BD0031A6EF /* ViewController.swift */; };
 		2395A6942547F0BD0031A6EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2395A6922547F0BD0031A6EF /* Main.storyboard */; };
 		2395A6972547F0BD0031A6EF /* Reimagine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2395A6952547F0BD0031A6EF /* Reimagine.xcdatamodeld */; };
 		2395A6992547F0BF0031A6EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2395A6982547F0BF0031A6EF /* Assets.xcassets */; };
 		2395A69C2547F0BF0031A6EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2395A69A2547F0BF0031A6EF /* LaunchScreen.storyboard */; };
 		2395A6A625480AF10031A6EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395A6A525480AF10031A6EF /* SignUpViewController.swift */; };
+		23DE7A76254D0D3D00701FEC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE7A75254D0D3D00701FEC /* SearchViewController.swift */; };
 		23E2572C254A58A000C52BA1 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2572B254A58A000C52BA1 /* MainTabViewController.swift */; };
 		23E2572F254A5B3F00C52BA1 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2572E254A5B3F00C52BA1 /* LogOutViewController.swift */; };
 		23E25732254A5D2C00C52BA1 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E25731254A5D2B00C52BA1 /* AddItemViewController.swift */; };
 		23E7E82D254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7E82C254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift */; };
-		23F4839A254A97740059CB31 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4838D254A97740059CB31 /* AmplifyModels.swift */; };
-		23F4839B254A97740059CB31 /* UserIdToPostId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4838E254A97740059CB31 /* UserIdToPostId.swift */; };
-		23F4839C254A97740059CB31 /* UserLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4838F254A97740059CB31 /* UserLister.swift */; };
-		23F4839D254A97740059CB31 /* BucketLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48390254A97740059CB31 /* BucketLister+Schema.swift */; };
-		23F4839E254A97740059CB31 /* PostLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48391254A97740059CB31 /* PostLister+Schema.swift */; };
-		23F4839F254A97740059CB31 /* UserIdToBucketId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48392254A97740059CB31 /* UserIdToBucketId.swift */; };
-		23F483A0254A97740059CB31 /* UserIdToPostId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48393254A97740059CB31 /* UserIdToPostId+Schema.swift */; };
-		23F483A1254A97740059CB31 /* UserLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48394254A97740059CB31 /* UserLister+Schema.swift */; };
-		23F483A2254A97740059CB31 /* PostLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48395254A97740059CB31 /* PostLister.swift */; };
-		23F483A3254A97740059CB31 /* UserIdToFriendId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48396254A97740059CB31 /* UserIdToFriendId+Schema.swift */; };
-		23F483A4254A97740059CB31 /* UserIdToBucketId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48397254A97740059CB31 /* UserIdToBucketId+Schema.swift */; };
-		23F483A5254A97740059CB31 /* BucketLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48398254A97740059CB31 /* BucketLister.swift */; };
-		23F483A6254A97740059CB31 /* UserIdToFriendId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F48399254A97740059CB31 /* UserIdToFriendId.swift */; };
+		23F79722254D530F0061FB84 /* UserIdToPostId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79715254D530E0061FB84 /* UserIdToPostId.swift */; };
+		23F79723254D530F0061FB84 /* userIdToFriendId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79716254D530E0061FB84 /* userIdToFriendId+Schema.swift */; };
+		23F79724254D530F0061FB84 /* BucketLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79717254D530E0061FB84 /* BucketLister.swift */; };
+		23F79725254D530F0061FB84 /* BucketLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79718254D530E0061FB84 /* BucketLister+Schema.swift */; };
+		23F79726254D530F0061FB84 /* UserLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79719254D530E0061FB84 /* UserLister.swift */; };
+		23F79727254D530F0061FB84 /* UserLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7971A254D530E0061FB84 /* UserLister+Schema.swift */; };
+		23F79728254D530F0061FB84 /* PostLister+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7971B254D530E0061FB84 /* PostLister+Schema.swift */; };
+		23F79729254D530F0061FB84 /* UserIdToBucketId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7971C254D530E0061FB84 /* UserIdToBucketId+Schema.swift */; };
+		23F7972A254D530F0061FB84 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7971D254D530E0061FB84 /* AmplifyModels.swift */; };
+		23F7972B254D530F0061FB84 /* userIdToFriendId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7971E254D530E0061FB84 /* userIdToFriendId.swift */; };
+		23F7972C254D530F0061FB84 /* PostLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7971F254D530E0061FB84 /* PostLister.swift */; };
+		23F7972D254D530F0061FB84 /* UserIdToPostId+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79720254D530E0061FB84 /* UserIdToPostId+Schema.swift */; };
+		23F7972E254D530F0061FB84 /* UserIdToBucketId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79721254D530F0061FB84 /* UserIdToBucketId.swift */; };
 		3DAD6ED6A34046A480AB34A6 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0845B2B3D9FB42B0812CE43A /* amplifyconfiguration.json */; };
 		79ECAF21D9EA4BC9BED52F35 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B7DC1794DB0845E29D1130A7 /* awsconfiguration.json */; };
 		B57B176C2E52C62B26B01772 /* Pods_Reimagine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE5D8B2DD77069846D8238 /* Pods_Reimagine.framework */; };
@@ -47,16 +52,20 @@
 /* Begin PBXFileReference section */
 		0845B2B3D9FB42B0812CE43A /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		087D6275AA2C64ECB1218332 /* Pods-Reimagine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reimagine.release.xcconfig"; path = "Target Support Files/Pods-Reimagine/Pods-Reimagine.release.xcconfig"; sourceTree = "<group>"; };
+		230889EB254CD40400B81464 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		230D563825481AAA00B937E2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		230D563B25481AD000B937E2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		230EC04C254D1E3F00473F35 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		2328A043254B903B0084E0C0 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		2342E209254D551600E4E3EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2342E21A254D57EB00E4E3EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2342E23E254D701600E4E3EB /* SettingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingUp.storyboard; sourceTree = "<group>"; };
+		2342E241254D706500E4E3EB /* SettingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpViewController.swift; sourceTree = "<group>"; };
 		23438370254A047F00777218 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		23438374254A156A00777218 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		237C481D2548458C00E7E41F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		237C48202548468A00E7E41F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2395A6892547F0BD0031A6EF /* Reimagine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reimagine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2395A68C2547F0BD0031A6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2395A68E2547F0BD0031A6EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2395A6902547F0BD0031A6EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2395A6932547F0BD0031A6EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2395A6962547F0BD0031A6EF /* Reimagine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reimagine.xcdatamodel; sourceTree = "<group>"; };
@@ -64,24 +73,24 @@
 		2395A69B2547F0BF0031A6EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2395A69D2547F0BF0031A6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2395A6A525480AF10031A6EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		23DE7A75254D0D3D00701FEC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		23E2572B254A58A000C52BA1 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		23E2572E254A5B3F00C52BA1 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
 		23E25731254A5D2B00C52BA1 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		23E7E82C254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DsiplayBucketListsViewController.swift; sourceTree = "<group>"; };
-		23F4838D254A97740059CB31 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
-		23F4838E254A97740059CB31 /* UserIdToPostId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdToPostId.swift; sourceTree = "<group>"; };
-		23F4838F254A97740059CB31 /* UserLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLister.swift; sourceTree = "<group>"; };
-		23F48390254A97740059CB31 /* BucketLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BucketLister+Schema.swift"; sourceTree = "<group>"; };
-		23F48391254A97740059CB31 /* PostLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostLister+Schema.swift"; sourceTree = "<group>"; };
-		23F48392254A97740059CB31 /* UserIdToBucketId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdToBucketId.swift; sourceTree = "<group>"; };
-		23F48393254A97740059CB31 /* UserIdToPostId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserIdToPostId+Schema.swift"; sourceTree = "<group>"; };
-		23F48394254A97740059CB31 /* UserLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserLister+Schema.swift"; sourceTree = "<group>"; };
-		23F48395254A97740059CB31 /* PostLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostLister.swift; sourceTree = "<group>"; };
-		23F48396254A97740059CB31 /* UserIdToFriendId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserIdToFriendId+Schema.swift"; sourceTree = "<group>"; };
-		23F48397254A97740059CB31 /* UserIdToBucketId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserIdToBucketId+Schema.swift"; sourceTree = "<group>"; };
-		23F48398254A97740059CB31 /* BucketLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketLister.swift; sourceTree = "<group>"; };
-		23F48399254A97740059CB31 /* UserIdToFriendId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdToFriendId.swift; sourceTree = "<group>"; };
-		3B7724D16D7749CDA49BCA7F /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
+		23F79715254D530E0061FB84 /* UserIdToPostId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserIdToPostId.swift; path = amplify/generated/models/UserIdToPostId.swift; sourceTree = SOURCE_ROOT; };
+		23F79716254D530E0061FB84 /* userIdToFriendId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "userIdToFriendId+Schema.swift"; path = "amplify/generated/models/userIdToFriendId+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		23F79717254D530E0061FB84 /* BucketLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BucketLister.swift; path = amplify/generated/models/BucketLister.swift; sourceTree = SOURCE_ROOT; };
+		23F79718254D530E0061FB84 /* BucketLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BucketLister+Schema.swift"; path = "amplify/generated/models/BucketLister+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		23F79719254D530E0061FB84 /* UserLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserLister.swift; path = amplify/generated/models/UserLister.swift; sourceTree = SOURCE_ROOT; };
+		23F7971A254D530E0061FB84 /* UserLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserLister+Schema.swift"; path = "amplify/generated/models/UserLister+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		23F7971B254D530E0061FB84 /* PostLister+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PostLister+Schema.swift"; path = "amplify/generated/models/PostLister+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		23F7971C254D530E0061FB84 /* UserIdToBucketId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserIdToBucketId+Schema.swift"; path = "amplify/generated/models/UserIdToBucketId+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		23F7971D254D530E0061FB84 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = SOURCE_ROOT; };
+		23F7971E254D530E0061FB84 /* userIdToFriendId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = userIdToFriendId.swift; path = amplify/generated/models/userIdToFriendId.swift; sourceTree = SOURCE_ROOT; };
+		23F7971F254D530E0061FB84 /* PostLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostLister.swift; path = amplify/generated/models/PostLister.swift; sourceTree = SOURCE_ROOT; };
+		23F79720254D530E0061FB84 /* UserIdToPostId+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserIdToPostId+Schema.swift"; path = "amplify/generated/models/UserIdToPostId+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		23F79721254D530F0061FB84 /* UserIdToBucketId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserIdToBucketId.swift; path = amplify/generated/models/UserIdToBucketId.swift; sourceTree = SOURCE_ROOT; };
 		8B1CD6A090D289C178CA0650 /* Pods-Reimagine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reimagine.debug.xcconfig"; path = "Target Support Files/Pods-Reimagine/Pods-Reimagine.debug.xcconfig"; sourceTree = "<group>"; };
 		B7DC1794DB0845E29D1130A7 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		BEED1B20241D4097B0273B46 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
@@ -117,6 +126,22 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		230EC04B254D1E2A00473F35 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				230EC04C254D1E3F00473F35 /* Profile.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		2342E23D254D6FF300E4E3EB /* SettingUp View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2342E241254D706500E4E3EB /* SettingUpViewController.swift */,
+			);
+			path = "SettingUp View Controllers";
+			sourceTree = "<group>";
+		};
 		2343836E254A040A00777218 /* AfterSignIn View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +151,8 @@
 				23E25731254A5D2B00C52BA1 /* AddItemViewController.swift */,
 				23E7E82C254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift */,
 				2328A043254B903B0084E0C0 /* CardCollectionViewCell.swift */,
+				230889EB254CD40400B81464 /* ProfileViewController.swift */,
+				23DE7A75254D0D3D00701FEC /* SearchViewController.swift */,
 			);
 			path = "AfterSignIn View Controllers";
 			sourceTree = "<group>";
@@ -144,6 +171,7 @@
 			children = (
 				2395A6922547F0BD0031A6EF /* Main.storyboard */,
 				23438374254A156A00777218 /* Home.storyboard */,
+				2342E23E254D701600E4E3EB /* SettingUp.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -170,9 +198,10 @@
 		2395A68B2547F0BD0031A6EF /* Reimagine */ = {
 			isa = PBXGroup;
 			children = (
-				2395A68C2547F0BD0031A6EF /* AppDelegate.swift */,
-				2395A68E2547F0BD0031A6EF /* SceneDelegate.swift */,
-				23F4838C254A97740059CB31 /* models */,
+				2342E21A254D57EB00E4E3EB /* SceneDelegate.swift */,
+				2342E209254D551600E4E3EB /* AppDelegate.swift */,
+				23F79714254D52FB0061FB84 /* Model_API */,
+				230EC04B254D1E2A00473F35 /* Class */,
 				230D563625481A4700B937E2 /* Helpers */,
 				2395A6A425480AC30031A6EF /* ViewControllers */,
 				23438379254A18E500777218 /* StoryBoard */,
@@ -188,6 +217,7 @@
 		2395A6A425480AC30031A6EF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2342E23D254D6FF300E4E3EB /* SettingUp View Controllers */,
 				2343836F254A042000777218 /* SignUp-SignIn View Controllers */,
 				2343836E254A040A00777218 /* AfterSignIn View Controllers */,
 				2395A6902547F0BD0031A6EF /* ViewController.swift */,
@@ -195,26 +225,25 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		23F4838C254A97740059CB31 /* models */ = {
+		23F79714254D52FB0061FB84 /* Model_API */ = {
 			isa = PBXGroup;
 			children = (
-				23F4838D254A97740059CB31 /* AmplifyModels.swift */,
-				23F4838E254A97740059CB31 /* UserIdToPostId.swift */,
-				23F4838F254A97740059CB31 /* UserLister.swift */,
-				23F48390254A97740059CB31 /* BucketLister+Schema.swift */,
-				23F48391254A97740059CB31 /* PostLister+Schema.swift */,
-				23F48392254A97740059CB31 /* UserIdToBucketId.swift */,
-				23F48393254A97740059CB31 /* UserIdToPostId+Schema.swift */,
-				23F48394254A97740059CB31 /* UserLister+Schema.swift */,
-				23F48395254A97740059CB31 /* PostLister.swift */,
-				23F48396254A97740059CB31 /* UserIdToFriendId+Schema.swift */,
-				23F48397254A97740059CB31 /* UserIdToBucketId+Schema.swift */,
-				23F48398254A97740059CB31 /* BucketLister.swift */,
-				23F48399254A97740059CB31 /* UserIdToFriendId.swift */,
+				23F7971D254D530E0061FB84 /* AmplifyModels.swift */,
+				23F79717254D530E0061FB84 /* BucketLister.swift */,
+				23F79718254D530E0061FB84 /* BucketLister+Schema.swift */,
+				23F7971F254D530E0061FB84 /* PostLister.swift */,
+				23F7971B254D530E0061FB84 /* PostLister+Schema.swift */,
+				23F79721254D530F0061FB84 /* UserIdToBucketId.swift */,
+				23F7971C254D530E0061FB84 /* UserIdToBucketId+Schema.swift */,
+				23F7971E254D530E0061FB84 /* userIdToFriendId.swift */,
+				23F79716254D530E0061FB84 /* userIdToFriendId+Schema.swift */,
+				23F79715254D530E0061FB84 /* UserIdToPostId.swift */,
+				23F79720254D530E0061FB84 /* UserIdToPostId+Schema.swift */,
+				23F79719254D530E0061FB84 /* UserLister.swift */,
+				23F7971A254D530E0061FB84 /* UserLister+Schema.swift */,
 			);
-			name = models;
-			path = amplify/generated/models;
-			sourceTree = SOURCE_ROOT;
+			path = Model_API;
+			sourceTree = "<group>";
 		};
 		37BD3CC74FAF4C34825F2C4E /* AmplifyConfig */ = {
 			isa = PBXGroup;
@@ -222,7 +251,6 @@
 				BEED1B20241D4097B0273B46 /* amplifytools.xcconfig */,
 				0845B2B3D9FB42B0812CE43A /* amplifyconfiguration.json */,
 				B7DC1794DB0845E29D1130A7 /* awsconfiguration.json */,
-				3B7724D16D7749CDA49BCA7F /* schema.graphql */,
 			);
 			name = AmplifyConfig;
 			path = .;
@@ -302,6 +330,7 @@
 				3DAD6ED6A34046A480AB34A6 /* amplifyconfiguration.json in Resources */,
 				79ECAF21D9EA4BC9BED52F35 /* awsconfiguration.json in Resources */,
 				23438375254A156B00777218 /* Home.storyboard in Resources */,
+				2342E23F254D701600E4E3EB /* SettingUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,33 +383,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F483A0254A97740059CB31 /* UserIdToPostId+Schema.swift in Sources */,
-				23F4839F254A97740059CB31 /* UserIdToBucketId.swift in Sources */,
+				23F79726254D530F0061FB84 /* UserLister.swift in Sources */,
+				23DE7A76254D0D3D00701FEC /* SearchViewController.swift in Sources */,
+				23F79728254D530F0061FB84 /* PostLister+Schema.swift in Sources */,
 				2395A6912547F0BD0031A6EF /* ViewController.swift in Sources */,
-				2395A68D2547F0BD0031A6EF /* AppDelegate.swift in Sources */,
+				23F79724254D530F0061FB84 /* BucketLister.swift in Sources */,
 				2328A044254B903B0084E0C0 /* CardCollectionViewCell.swift in Sources */,
+				23F79729254D530F0061FB84 /* UserIdToBucketId+Schema.swift in Sources */,
 				230D563C25481AD000B937E2 /* Utilities.swift in Sources */,
-				23F483A3254A97740059CB31 /* UserIdToFriendId+Schema.swift in Sources */,
-				23F483A4254A97740059CB31 /* UserIdToBucketId+Schema.swift in Sources */,
+				23F79727254D530F0061FB84 /* UserLister+Schema.swift in Sources */,
+				23F79725254D530F0061FB84 /* BucketLister+Schema.swift in Sources */,
+				230EC04D254D1E3F00473F35 /* Profile.swift in Sources */,
+				23F7972E254D530F0061FB84 /* UserIdToBucketId.swift in Sources */,
 				237C48212548468A00E7E41F /* AuthService.swift in Sources */,
-				23F483A2254A97740059CB31 /* PostLister.swift in Sources */,
 				237C481E2548458C00E7E41F /* HomeViewController.swift in Sources */,
-				23F4839B254A97740059CB31 /* UserIdToPostId.swift in Sources */,
-				23F483A1254A97740059CB31 /* UserLister+Schema.swift in Sources */,
+				230889EC254CD40400B81464 /* ProfileViewController.swift in Sources */,
 				23E25732254A5D2C00C52BA1 /* AddItemViewController.swift in Sources */,
-				23F4839D254A97740059CB31 /* BucketLister+Schema.swift in Sources */,
-				23F4839A254A97740059CB31 /* AmplifyModels.swift in Sources */,
-				2395A68F2547F0BD0031A6EF /* SceneDelegate.swift in Sources */,
+				23F7972A254D530F0061FB84 /* AmplifyModels.swift in Sources */,
+				23F79722254D530F0061FB84 /* UserIdToPostId.swift in Sources */,
 				23E7E82D254AAC0C00A1F117 /* DsiplayBucketListsViewController.swift in Sources */,
 				23E2572F254A5B3F00C52BA1 /* LogOutViewController.swift in Sources */,
 				23E2572C254A58A000C52BA1 /* MainTabViewController.swift in Sources */,
-				23F483A5254A97740059CB31 /* BucketLister.swift in Sources */,
+				2342E20A254D551600E4E3EB /* AppDelegate.swift in Sources */,
+				2342E21B254D57EB00E4E3EB /* SceneDelegate.swift in Sources */,
 				2395A6972547F0BD0031A6EF /* Reimagine.xcdatamodeld in Sources */,
 				2395A6A625480AF10031A6EF /* SignUpViewController.swift in Sources */,
-				23F483A6254A97740059CB31 /* UserIdToFriendId.swift in Sources */,
-				23F4839C254A97740059CB31 /* UserLister.swift in Sources */,
-				23F4839E254A97740059CB31 /* PostLister+Schema.swift in Sources */,
 				23438371254A047F00777218 /* SignInViewController.swift in Sources */,
+				2342E242254D706500E4E3EB /* SettingUpViewController.swift in Sources */,
+				23F7972B254D530F0061FB84 /* userIdToFriendId.swift in Sources */,
+				23F7972D254D530F0061FB84 /* UserIdToPostId+Schema.swift in Sources */,
+				23F7972C254D530F0061FB84 /* PostLister.swift in Sources */,
+				23F79723254D530F0061FB84 /* userIdToFriendId+Schema.swift in Sources */,
 				230D563925481AAA00B937E2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

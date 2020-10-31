@@ -20,6 +20,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeElements()
+        
 
         // Do any additional setup after loading the view.
     }

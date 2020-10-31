@@ -14,7 +14,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("Check User")
+        print(Amplify.Auth.getCurrentUser())
         // Do any additional setup after loading the view.
     }
     

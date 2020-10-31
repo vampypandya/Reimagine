@@ -19,18 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         let currentUser = Amplify.Auth.getCurrentUser()
-        print(Amplify.Auth.fetchAuthSession())
-        Amplify.Auth.fetchUserAttributes() { result in
-               switch result {
-               case .success(let attributes):
-                   print("User attributes - \(attributes)")
-               case .failure(let error):
-                   print("Fetching user attributes failed with error \(error)")
-               }
-           }
-        print(currentUser)
         if currentUser != nil {
-            print("Going Home")
             let storyBoard = UIStoryboard(name: "Home", bundle: nil)
             DispatchQueue.main.async {
                 let vc = storyBoard.instantiateViewController(identifier: "MainTabViewController") as? MainTabViewController

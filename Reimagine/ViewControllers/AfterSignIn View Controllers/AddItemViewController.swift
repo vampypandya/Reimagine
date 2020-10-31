@@ -46,7 +46,7 @@ class AddItemViewController: UIViewController {
         let activityDescriptionText = Utilities.fieldData(descriptionTextField)
         let bucketListItem = BucketLister(title:activityNameText, type:activityTypeText, description: activityDescriptionText,userId:userId )
         self.addItemInBucket(bucketListItem, userId)
-        let newPost = PostLister(postId:"0",content:activityDescriptionText, likes:0, userId:userId)
+        let newPost = PostLister(content: activityDescriptionText, userId: userId)
         self.addPost(newPost, userId)
         
         labelField.alpha = 1

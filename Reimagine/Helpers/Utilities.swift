@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import Amplify
+import AmplifyPlugins
 
 class Utilities {
     
@@ -81,4 +83,17 @@ class Utilities {
         }
         return nil
     }
+    
+//    
+//    static func findifOnline() -> Bool {
+//        _ = Amplify.Auth.fetchAuthSession { result in
+//                switch result {
+//                case .success(let session):
+//                    print("Is user signed in - \(session.isSignedIn)")
+//                    return session.isSignedIn
+//                case .failure(let error):
+//                    print("Fetch session failed with error \(error)")
+//                }
+//            }
+//    }
 }

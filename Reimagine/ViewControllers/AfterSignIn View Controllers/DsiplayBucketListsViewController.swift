@@ -18,9 +18,7 @@ class DsiplayBucketListsViewController: UIViewController, UICollectionViewDataSo
     var optionList = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let fetchContactGrp = DispatchGroup()
-//        fetchContactGrp.
         fetchContactGrp.enter()
         getOptionList(){ bucketlists in
             for bucketlist in bucketlists {
@@ -32,7 +30,9 @@ class DsiplayBucketListsViewController: UIViewController, UICollectionViewDataSo
         }
         fetchContactGrp.wait()
         
+        
         print(self.titleList)
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         // Do any additional setup after loading the view.

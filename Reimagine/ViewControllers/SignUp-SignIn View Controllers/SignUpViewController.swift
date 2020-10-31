@@ -140,11 +140,26 @@ class SignUpViewController: UIViewController {
     }
     
     func loadHomeScreen(){
-        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+        let storyBoard = UIStoryboard(name: "SettingUp", bundle: nil)
         DispatchQueue.main.async {
-            let vc = storyBoard.instantiateViewController(identifier: "HomeViewController") as? HomeViewController
+            let vc = storyBoard.instantiateViewController(identifier: "SettingUpViewController") as? SettingUpViewController
             self.view.window?.rootViewController = vc
             self.view.window?.makeKeyAndVisible()
+        }
+    }
+    func addUser(_ userItem:UserLister){
+        Amplify.API.mutate(request: .create(userItem)) { event in
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let userItem):
+                    print("Successfully created the todo: \(userItem)")
+                case .failure(let graphQLError):
+                    print("Failed to create graphql \(graphQLError)")
+                }
+            case .failure(let apiError):
+                print("Failed to create a todo", apiError)
+            }
         }
     }
     
