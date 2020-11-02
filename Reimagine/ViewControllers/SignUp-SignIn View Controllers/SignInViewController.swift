@@ -38,7 +38,6 @@ class SignInViewController: UIViewController {
         let passwordText = Utilities.fieldData(passwordTextField)
         
         Amplify.Auth.signIn(username: emailText, password: passwordText) { result in
-
             switch result {
             case .success:
                 self.loadHomeScreen()
@@ -49,7 +48,6 @@ class SignInViewController: UIViewController {
                     self.errorLabel.text = error.debugDescription
                 }
             }
-            
         }
         
     }

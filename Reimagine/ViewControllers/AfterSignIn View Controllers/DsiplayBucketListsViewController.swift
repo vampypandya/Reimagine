@@ -86,7 +86,7 @@ class DsiplayBucketListsViewController: UIViewController, UICollectionViewDataSo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         print(self.titleList)
         
-        cell.frame = CGRect(x:50, y:70*indexPath.row, width:361, height:70)
+        cell.frame = CGRect(x:50, y:70*indexPath.row, width:400, height:70)
         print(CGRect(x:50, y:70*indexPath.row, width:361, height:50))
         if let label = cell.viewWithTag(100) as? UIButton {
             label.setTitle(self.titleList[indexPath.row], for: .normal)

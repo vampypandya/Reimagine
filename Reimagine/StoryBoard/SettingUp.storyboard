@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Setting Up View Controller-->
+        <!--Setting Up One View Controller-->
         <scene sceneID="NcZ-aP-g1n">
             <objects>
-                <viewController storyboardIdentifier="SettingUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ldm-ef-piM" customClass="SettingUpViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingUpOneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ldm-ef-piM" customClass="SettingUpOneViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="01d-Mp-qYu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nlX-dh-61c">
-                                <rect key="frame" x="30" y="186" width="354" height="470"/>
+                                <rect key="frame" x="30" y="213" width="354" height="470"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ul8-oA-09Z">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
@@ -99,42 +99,56 @@
                                     <constraint firstItem="xpe-CZ-hk6" firstAttribute="height" secondItem="Ul8-oA-09Z" secondAttribute="height" id="aLK-cc-z8d"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbn-dV-Zd1">
+                                <rect key="frame" x="157" y="773.5" width="100" height="47.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="29B-56-mmr"/>
+                                    <constraint firstAttribute="height" constant="50" id="yy4-Cz-oW5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                <state key="normal" backgroundImage="arrowshape.bounce.forward.fill" catalog="system">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstButtonClick:" destination="Ldm-ef-piM" eventType="touchUpInside" id="PRp-aB-u1I"/>
+                                    <action selector="firstNextClick:" destination="Ldm-ef-piM" eventType="touchUpInside" id="I6T-t2-oYQ"/>
+                                    <action selector="homeButtonClick:" destination="Ldm-ef-piM" eventType="touchUpInside" id="FcC-Tb-T1v"/>
+                                    <segue destination="hMV-jj-QtM" kind="show" identifier="SegueOne" id="33U-zM-tkA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8U2-e7-9JU"/>
                         <color key="backgroundColor" red="1" green="0.23459867260313272" blue="0.48124014850432695" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="nlX-dh-61c" firstAttribute="centerY" secondItem="01d-Mp-qYu" secondAttribute="centerY" id="GvX-9G-UWW"/>
+                            <constraint firstItem="8U2-e7-9JU" firstAttribute="bottom" secondItem="Fbn-dV-Zd1" secondAttribute="bottom" constant="40" id="Kzc-CZ-Wkz"/>
                             <constraint firstItem="nlX-dh-61c" firstAttribute="leading" secondItem="8U2-e7-9JU" secondAttribute="leading" constant="30" id="VHM-M5-Pv8"/>
                             <constraint firstItem="8U2-e7-9JU" firstAttribute="trailing" secondItem="nlX-dh-61c" secondAttribute="trailing" constant="30" id="Y6U-42-9Om"/>
-                            <constraint firstItem="nlX-dh-61c" firstAttribute="centerY" secondItem="01d-Mp-qYu" secondAttribute="centerY" id="xR2-I6-Y5M"/>
+                            <constraint firstItem="Fbn-dV-Zd1" firstAttribute="centerX" secondItem="01d-Mp-qYu" secondAttribute="centerX" id="z7O-QZ-56W"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="eo2-CN-sKo" appends="YES" id="Es6-bo-sBs"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="SrW-Jz-TmE"/>
                     <connections>
-                        <outlet property="city_state" destination="RGh-zG-R4I" id="gfZ-o9-sft"/>
-                        <outlet property="country" destination="DZe-UN-QY5" id="uaN-jq-yET"/>
-                        <outlet property="email" destination="quR-0f-iW8" id="GwL-WR-sKQ"/>
-                        <outlet property="fname" destination="Pk3-JB-IlK" id="19I-7u-q2R"/>
-                        <outlet property="lname" destination="xpe-CZ-hk6" id="fKe-sW-EPp"/>
-                        <outlet property="nickname" destination="IBZ-da-kAE" id="Rtf-LA-Udv"/>
+                        <outlet property="city_state" destination="RGh-zG-R4I" id="4xI-Jr-tQh"/>
+                        <outlet property="country" destination="DZe-UN-QY5" id="nvn-WC-DgP"/>
+                        <outlet property="email" destination="quR-0f-iW8" id="sYh-GW-SOO"/>
+                        <outlet property="firstNext" destination="Fbn-dV-Zd1" id="t3E-BA-jT5"/>
+                        <outlet property="fname" destination="Pk3-JB-IlK" id="q41-eJ-ex1"/>
+                        <outlet property="lname" destination="xpe-CZ-hk6" id="hig-Jp-DvH"/>
+                        <outlet property="nickname" destination="IBZ-da-kAE" id="H8Q-J0-uAE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3u-9h-ESH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="eo2-CN-sKo">
-                    <connections>
-                        <segue destination="hMV-jj-QtM" kind="show" animates="NO" id="5w5-3P-bJ8"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-752" y="-62"/>
+            <point key="canvasLocation" x="157.97101449275362" y="-62.276785714285708"/>
         </scene>
-        <!--Setting Up View Controller-->
+        <!--Setting Up Two View Controller-->
         <scene sceneID="0jW-9y-mr2">
             <objects>
-                <viewController id="hMV-jj-QtM" customClass="SettingUpViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingUpViewTwoController" id="hMV-jj-QtM" customClass="SettingUpTwoViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Suj-KY-LXc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,45 +203,55 @@
                                     <constraint firstItem="jOW-I1-KYy" firstAttribute="height" secondItem="1qP-AB-XYj" secondAttribute="height" id="wmr-t2-5pc"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7W-Pm-oFs">
+                                <rect key="frame" x="157" y="719.5" width="100" height="47.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R9t-NP-g9o"/>
+                                    <constraint firstAttribute="width" constant="100" id="StN-l5-hmF"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                <state key="normal" backgroundImage="arrowshape.bounce.forward.fill" catalog="system">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="secondButtonClick:" destination="hMV-jj-QtM" eventType="touchUpInside" id="WCK-8C-p1T"/>
+                                    <action selector="secondNextClick:" destination="hMV-jj-QtM" eventType="touchUpInside" id="K7h-SB-PLX"/>
+                                    <segue destination="PEh-Av-2rw" kind="show" identifier="secondSegue" id="IQF-68-Rr6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r3d-dg-n6a"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="g7W-Pm-oFs" firstAttribute="centerX" secondItem="Suj-KY-LXc" secondAttribute="centerX" id="Jdl-gz-vrS"/>
                             <constraint firstItem="2gX-rK-ct0" firstAttribute="centerY" secondItem="Suj-KY-LXc" secondAttribute="centerY" id="SRO-ZZ-dCW"/>
+                            <constraint firstItem="r3d-dg-n6a" firstAttribute="bottom" secondItem="g7W-Pm-oFs" secondAttribute="bottom" constant="40" id="Sv2-XF-YSa"/>
                             <constraint firstItem="r3d-dg-n6a" firstAttribute="trailing" secondItem="2gX-rK-ct0" secondAttribute="trailing" constant="30" id="izD-ZC-mDt"/>
                             <constraint firstItem="2gX-rK-ct0" firstAttribute="leading" secondItem="r3d-dg-n6a" secondAttribute="leading" constant="30" id="ohv-w8-4Pu"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="L19-3C-vII" appends="YES" id="Ipb-oX-tz4"/>
-                            <outletCollection property="gestureRecognizers" destination="15w-7X-wcE" appends="YES" id="rsO-WQ-fP8"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="nOS-aX-psy"/>
                     <connections>
                         <outlet property="education_level" destination="Sa2-Vp-FsB" id="MZs-I1-BiT"/>
-                        <outlet property="major" destination="jOW-I1-KYy" id="hBP-zT-9x5"/>
+                        <outlet property="educational" destination="1qP-AB-XYj" id="Erc-SN-jeM"/>
+                        <outlet property="educationallevel" destination="Sa2-Vp-FsB" id="72u-GX-hO3"/>
+                        <outlet property="major" destination="jOW-I1-KYy" id="fJc-ir-WnY"/>
+                        <outlet property="secondNext" destination="g7W-Pm-oFs" id="Y77-kC-wCc"/>
                         <outlet property="university_name" destination="9Eb-fS-Ly5" id="Emz-yc-vmI"/>
+                        <outlet property="universityname" destination="9Eb-fS-Ly5" id="E4u-Cg-MuB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="llg-ZS-Fyo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="L19-3C-vII" userLabel="Right View Swipe Gesture Recognizer">
-                    <connections>
-                        <segue destination="PEh-Av-2rw" kind="show" id="401-cZ-JcM"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="15w-7X-wcE" userLabel="Left View Swipe Gesture Recognizer">
-                    <connections>
-                        <segue destination="Ldm-ef-piM" kind="show" id="KOt-HL-fQT"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="68" y="-62"/>
+            <point key="canvasLocation" x="976.81159420289862" y="-62.276785714285708"/>
         </scene>
-        <!--Setting Up View Controller-->
+        <!--Setting Up Three View Controller-->
         <scene sceneID="yJK-Y3-GiQ">
             <objects>
-                <viewController id="PEh-Av-2rw" customClass="SettingUpViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingUpViewThreeController" id="PEh-Av-2rw" customClass="SettingUpThreeViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t85-cC-bUf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,48 +339,56 @@
                                     <constraint firstItem="Auv-Zc-Q1K" firstAttribute="height" secondItem="MOW-pO-19u" secondAttribute="height" id="sva-EB-5gC"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVp-n2-9yY">
+                                <rect key="frame" x="157" y="719.5" width="100" height="47.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FIz-Gb-k55"/>
+                                    <constraint firstAttribute="height" constant="50" id="egO-fm-CrB"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                <state key="normal" backgroundImage="arrowshape.bounce.forward.fill" catalog="system">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="thirdButtonClick:" destination="PEh-Av-2rw" eventType="touchUpInside" id="u7W-Es-gFf"/>
+                                    <action selector="thirdNextClick:" destination="PEh-Av-2rw" eventType="touchUpInside" id="VGO-jy-DlU"/>
+                                    <segue destination="FCe-RF-aXH" kind="show" identifier="thirdSegue" id="cqV-Cy-Bec"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eTw-AP-iRz"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="pgJ-Bh-LQp" firstAttribute="leading" secondItem="eTw-AP-iRz" secondAttribute="leading" constant="30" id="A19-ss-9tX"/>
+                            <constraint firstItem="eTw-AP-iRz" firstAttribute="bottom" secondItem="dVp-n2-9yY" secondAttribute="bottom" constant="40" id="KvC-Ld-S0A"/>
                             <constraint firstItem="pgJ-Bh-LQp" firstAttribute="centerY" secondItem="t85-cC-bUf" secondAttribute="centerY" id="qFf-M6-29w"/>
                             <constraint firstItem="eTw-AP-iRz" firstAttribute="trailing" secondItem="pgJ-Bh-LQp" secondAttribute="trailing" constant="30" id="vzV-8I-pmD"/>
+                            <constraint firstItem="dVp-n2-9yY" firstAttribute="centerX" secondItem="t85-cC-bUf" secondAttribute="centerX" id="yD9-mn-lw5"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="dYm-Z4-R1U" appends="YES" id="a5B-be-OrG"/>
-                            <outletCollection property="gestureRecognizers" destination="QlP-tF-JKE" appends="YES" id="gly-vX-f8R"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="yEv-JY-CAe"/>
                     <connections>
-                        <outlet property="car" destination="o19-gb-Aha" id="Ugb-vd-Rwn"/>
-                        <outlet property="celebrity" destination="VBS-Ua-V8D" id="UTO-4u-spU"/>
-                        <outlet property="dreamcity" destination="akE-3v-mTL" id="pwB-hF-GIX"/>
-                        <outlet property="hobby" destination="FJi-ZN-JMw" id="gnR-r3-Z0s"/>
-                        <outlet property="sport" destination="fOF-zE-6hi" id="Tjd-Ls-NQf"/>
+                        <outlet property="car" destination="o19-gb-Aha" id="aSv-Ea-N0B"/>
+                        <outlet property="celebrity" destination="VBS-Ua-V8D" id="GyJ-sR-KCk"/>
+                        <outlet property="dream" destination="Auv-Zc-Q1K" id="zAB-iG-FZD"/>
+                        <outlet property="dreamcity" destination="akE-3v-mTL" id="YXI-7c-ZXk"/>
+                        <outlet property="hobby" destination="FJi-ZN-JMw" id="Vw7-93-LlL"/>
+                        <outlet property="sport" destination="fOF-zE-6hi" id="jvE-n2-YLV"/>
+                        <outlet property="thirdNext" destination="dVp-n2-9yY" id="bab-1E-hPs"/>
                         <outlet property="unachievabledream" destination="Auv-Zc-Q1K" id="jEJ-01-ONG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWk-CD-wpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="QlP-tF-JKE" userLabel="Right View Swipe Gesture Recognizer">
-                    <connections>
-                        <segue destination="FCe-RF-aXH" kind="show" id="dK3-0b-v7G"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="dYm-Z4-R1U" userLabel="Left View Swipe Gesture Recognizer">
-                    <connections>
-                        <segue destination="hMV-jj-QtM" kind="show" id="gZj-8M-GFd"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1000" y="-62"/>
+            <point key="canvasLocation" x="1910.144927536232" y="-62.276785714285708"/>
         </scene>
         <!--Setting Up View Controller-->
         <scene sceneID="SWR-gV-Mg2">
             <objects>
-                <viewController id="FCe-RF-aXH" customClass="SettingUpViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingUpViewController" id="FCe-RF-aXH" customClass="SettingUpViewController" customModule="Reimagine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f9r-zo-tDK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -384,9 +416,6 @@
                             <constraint firstItem="7PM-19-4wn" firstAttribute="centerY" secondItem="f9r-zo-tDK" secondAttribute="centerY" id="g3b-LT-yQW"/>
                             <constraint firstItem="7PM-19-4wn" firstAttribute="centerX" secondItem="f9r-zo-tDK" secondAttribute="centerX" id="k1J-fk-8x5"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="yJp-3D-bRa" appends="YES" id="F5G-Bg-Kxn"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="qVJ-7C-4Eq"/>
                     <connections>
@@ -394,20 +423,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8r-Pi-3Ay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="yJp-3D-bRa" userLabel="Left View Swipe Gesture Recognizer">
-                    <connections>
-                        <segue destination="PEh-Av-2rw" kind="show" id="vYK-dF-WNR"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2254" y="-62"/>
+            <point key="canvasLocation" x="2828.985507246377" y="-62.276785714285708"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="401-cZ-JcM"/>
-        <segue reference="gZj-8M-GFd"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="arrowshape.bounce.forward.fill" catalog="system" width="128" height="86"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBlueColor">

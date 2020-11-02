@@ -124,11 +124,24 @@ class SignUpViewController: UIViewController {
     @IBAction func getVerifiedButton(_ sender: Any) {
         let verficationCode = Utilities.fieldData(verificationCodeTextField)
         let emailText = Utilities.fieldData(emailTextField)
+        let passwordText = Utilities.fieldData(passwordTextField)
         Amplify.Auth.confirmSignUp(for: emailText, confirmationCode: verficationCode) { result in
             switch result {
             case .success:
                 print("Confirm signUp succeeded")
-                self.loadHomeScreen()
+                Amplify.Auth.signIn(username: emailText, password: passwordText) { result in
+                    switch result {
+                    case .success:
+                        self.loadHomeScreen()
+                    case .failure(let error):
+                        print("Sign in error \(error)")
+                        DispatchQueue.main.async {
+                            self.errorLabel.alpha = 1
+                            self.errorLabel.text = error.debugDescription
+                        }
+                    }
+                }
+//                self.loadHomeScreen(emailText, passwordTextField)
             case .failure(let error):
                 DispatchQueue.main.async {
                 self.verificationErrorLabel.alpha = 1
@@ -142,7 +155,7 @@ class SignUpViewController: UIViewController {
     func loadHomeScreen(){
         let storyBoard = UIStoryboard(name: "SettingUp", bundle: nil)
         DispatchQueue.main.async {
-            let vc = storyBoard.instantiateViewController(identifier: "SettingUpViewController") as? SettingUpViewController
+            let vc = storyBoard.instantiateViewController(identifier: "SettingUpOneViewController") as? SettingUpOneViewController
             self.view.window?.rootViewController = vc
             self.view.window?.makeKeyAndVisible()
         }

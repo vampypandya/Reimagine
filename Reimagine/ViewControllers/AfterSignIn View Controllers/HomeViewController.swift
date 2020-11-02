@@ -9,21 +9,30 @@ import UIKit
 import Amplify
 import AmplifyPlugins
 
-class HomeViewController: UIViewController {    
-    @IBOutlet weak var logOutButton: UITabBarItem!
+class HomeViewController: UIViewController {
+    @IBOutlet weak var homeTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Check User")
-        print(Amplify.Auth.getCurrentUser())
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    
-    @IBAction func logOutButtonClick(_ sender: Any) {
+        
+//        loadProfile()
         
     }
+    
+    func loadProfile() {
+//        let addButtonIndex = IndexPath(row: 1, section: 1)
+//        let profilePicIndex = IndexPath(row: 2, section: 1)
+//        let descriptionPicIndex = IndexPath(row: 3, section: 1)
+//
+//        let profilePicCell = homeTableView.cellForRow(at: profilePicIndex)
+//        if let profilePic = profilePicCell?.viewWithTag(100) as? UIImageView {
+//            Utilities.styleProfilePic(profilePic)
+//        }
+    }
+    
+    
+
     
     
     

@@ -62,6 +62,12 @@ class Utilities {
         button.tintColor = UIColor.systemGreen
     }
     
+    static func styleProfilePic(_ pic:UIImageView) {
+        pic.layer.masksToBounds = true
+        pic.layer.cornerRadius = pic.bounds.width / 2
+        
+    }
+    
     static func isPasswordValid(_ password : String) -> Bool {
         
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
@@ -83,6 +89,8 @@ class Utilities {
         }
         return nil
     }
+    
+    
     
 //    
 //    static func findifOnline() -> Bool {
